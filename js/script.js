@@ -72,4 +72,17 @@ document.addEventListener('DOMContentLoaded', () => {
             printToFile(memeContainer);
         });
     }
+
+    const selectImageInput = document.getElementById('select-image-input');
+
+    if (selectImageInput != null) {
+        selectImageInput.addEventListener('change', () => {
+            const [file] = selectImageInput.files;
+            if (file == null) {
+                return;
+            }
+            memeContainer.style.backgroundImage = `url('${URL.createObjectURL(file)}')`
+            selectImageInput.value = '';
+        });
+    }
 });

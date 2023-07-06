@@ -20,6 +20,10 @@ html, body {
     height: 100%;
 }
 
+.d-none {
+    display: none;
+}
+
 .meme-text {
     font-family: Impact, sans-serif;
     text-transform: uppercase;
@@ -30,10 +34,9 @@ html, body {
 }
 
 .meme {
-    background-image: url('/img/engineer.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     width: 700px;
     height: 700px;
     display: flex;
@@ -58,6 +61,7 @@ html, body {
 }
 
 .button {
+    text-align: center;
     font-family: inherit;
     color: inherit;
     font-size: 25px;
