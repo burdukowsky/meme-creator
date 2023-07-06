@@ -6,6 +6,7 @@
 
 html {
     background-color: #181a1b;
+    color: white;
 }
 
 body {
@@ -43,8 +44,8 @@ html, body {
 }
 
 .editor {
+    padding: 50px;
     display: flex;
-    height: 100%;
     align-items: center;
     justify-content: center;
     gap: 50px;
@@ -58,10 +59,15 @@ html, body {
 
 .button {
     font-family: inherit;
+    color: inherit;
     font-size: 25px;
     border: none;
     background-color: #0d4e6d;
-    color: white;
     padding: 10px 30px;
     cursor: pointer;
+}
+
+.message {
+    font-size: 20px;
+    text-align: center;
 }

@@ -37,7 +37,20 @@ function printToFile(div) {
     });
 }
 
+function isFirefox() {
+    return window.navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+}
+
+function checkFirefox() {
+    const messageEl = document.getElementById('firefox-message');
+    if (messageEl != null && isFirefox() && window.ClipboardItem == null) {
+        messageEl.style.display = 'block';
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    checkFirefox();
+
     const memeContainer = document.getElementById('meme-container');
 
     if (memeContainer == null) {
