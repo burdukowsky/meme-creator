@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #181a1b;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+}
+
+.meme-text {
+    font-family: Impact, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 0 4px #000, 0 2px 4px #000, -2px 0 4px #000, 0 -2px 4px #000;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.meme {
+    background-image: url('/img/engineer.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.editor {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
