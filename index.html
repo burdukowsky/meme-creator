@@ -8,10 +8,16 @@
 </head>
 <body>
 <div class="editor">
-    <div class="meme">
-        <span class="meme-text">Вы чего творите?</span>
-        <span class="meme-text">Это ж опасный мутаген!</span>
+    <div id="meme-container" class="meme">
+        <span class="meme-text" contenteditable>Вы чего творите?</span>
+        <span class="meme-text" contenteditable>Это ж опасный мутаген!</span>
+    </div>
+    <div class="editor-button-container">
+        <button id="download-button" type="button" class="button">Скачать</button>
+        <button id="copy-button" type="button" class="button">Копировать в буфер обмена</button>
     </div>
 </div>
+<script src="/vendors/html2canvas_1.4.1.min.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
